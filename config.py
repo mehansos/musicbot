@@ -7,26 +7,26 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID","19030241"))
+API_HASH = getenv("API_HASH","cee7dfdc3a5a0acedc3bcbab6e18550a")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","6153156984:AAHm33bx3-kxVrnc7_YNePTLeo0r8EztCSw")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","1001870244106"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "˹ᴍs ᴍᴜsɪᴄ ʙᴏᴛ˼")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5291970038").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/AnonymousX1025/AnonXMusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN","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")
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DevilsHeavenMF")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/msmusixgroup")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -45,10 +45,10 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "3"))
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID","dc732190f35c4d77ae4b35670840f21a")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "5073bae79ffe40259cc6b572f3680b60")
 
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "5"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "50"))
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
@@ -58,7 +58,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "1BVtsOK8Bu2BUYXTJGElAOcHLc4wCLrqAzpHbv1RC7wABiJfFg-OgILbjmBzi_HHg6tkCt4-rK4Ai_ien15oLepob8ie_WfQAepWid_-lytIBEEg-CGnODe_zEZQ0AuxWlcOwfuzoue10IBdthDWFrBMaxgvFcNrHPwQJOu3KQMyZN0ULguOVO3W9xlBlZ5I3SG2HovsJ_sv-qlSPRNDBN9O9JScbkwAC3Vs3i3lUC7NDxTPZjHsfDxcc2xEdhM6IP-AqNC_FGG8VHplrOJFKPAwWogR1Eekx9zCjINZB_cO1I48nxYR5958Dh12fWW7AXdYwyM-RvSGwGTklT05cyELKafS03wQ=")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
